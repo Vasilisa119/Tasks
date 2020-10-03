@@ -1,0 +1,14 @@
+# 2. Пользователь вводит время в секундах. Переведите время в часы, минуты и секунды
+# и выведите в формате чч:мм:сс. Используйте форматирование строк.
+
+SecUser = int(input("Введите секунды"))
+Hour = SecUser//3600
+Min = (SecUser - Hour*3600)//60
+Sec = SecUser - Hour*3600 - Min*60
+if Hour < 10:
+    Hour = "0{}".format(Hour)
+if Min < 10:
+    Min = "0{}".format(Min)
+if Sec < 10:
+    Sec = "0{}".format(Sec)
+print("В формате чч:мм:сс Ваши секунды выглядят так: {}:{}:{}".format(Hour, Min, Sec))
