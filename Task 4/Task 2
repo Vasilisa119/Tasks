@@ -1,0 +1,18 @@
+"""2. Реализовать функцию, принимающую несколько параметров, описывающих данные пользователя: имя, фамилия,
+год рождения, город проживания, email, телефон. Функция должна принимать параметры как именованные аргументы.
+Реализовать вывод данных о пользователе одной строкой.
+"""
+
+name = input("Введите имя")
+surname = input("Введите фамилию")
+date_of_birth = input("Введите дату рождения")
+city = input("Введите город проживания")
+email = input("Введите email ")
+phone = input("Введите телефон")
+
+def users_date(name1, surname1, date_of_birth1, city1, email1, phone1):
+    print(name1, surname1, date_of_birth1, city1, email1, phone1)
+
+
+users_date(name1=name, surname1=surname, date_of_birth1=date_of_birth, city1=city, email1=email, phone1=phone)
+
